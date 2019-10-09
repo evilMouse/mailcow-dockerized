@@ -162,6 +162,23 @@ $lang['user']['edit'] = 'Edytuj';
 $lang['user']['remove'] = 'Usuń';
 $lang['user']['create_syncjob'] = 'Utwórz nowe polecenie synchronizacji';
 
+$lang['user']['force_pw_update'] = '<b>Musisz</b> zmienić hasło, aby używać webmaila.';
+
+$lang['user']['active_sieve'] = "Aktywny filtr";
+$lang['user']['show_sieve_filters'] = "Twój filtr sieve";
+$lang['user']['no_active_filter'] = "Brak aktywnego filtra";
+
+$lang['user']['client_configuration'] = 'Instrukcja konfiguracji w programach pocztowych i na smartfonach';
+
+$lang['user']['shared_aliases'] = 'Aliasy współdzielone';
+$lang['user']['shared_aliases_desc'] = 'Na aliasy współdzielone nie wpływają filtry spamu i ustawienia TLS.';
+$lang['user']['direct_aliases'] = 'Aliasy bezpośrednie';
+$lang['user']['direct_aliases_desc'] = 'Na aliasy bezpośrednie wpływają filtry spamu i ustawienia TLS.';
+
+$lang['user']['sogo_profile_reset'] = 'Usuń profil SOGo (webmail)';
+$lang['user']['sogo_profile_reset_now'] = 'Usuń profil teraz';
+$lang['user']['sogo_profile_reset_help'] = 'To usunie ustawienia SOGo <b>bezpowrotnie</b>.';
+
 $lang['start']['mailcow_apps_detail'] = 'Użyj aplikacji mailcow, aby mieć dostęp do wiadomości, kalendarza, kontaktów i innych.';
 $lang['start']['mailcow_panel_detail'] = '<b>Administratorzy domeny</b> tworzą, modyfikują lub usuwają skrzynki i aliasy, zmieniają domeny i czytają dalsze informacje o przypisanych im domenach.<br>
 	<b>Użytkownicy skrzynek</b> mogą tworzyć ograniczone czasowo aliasy (aliasy spam), zmieniać swoje hasła i ustawienia filtru spam.';
@@ -172,6 +189,7 @@ $lang['header']['mailcow_settings'] = 'Konfiguracja';
 $lang['header']['administration'] = 'Administrowanie';
 $lang['header']['mailboxes'] = 'Skrzynki';
 $lang['header']['user_settings'] = 'Ustawienia użytkownika';
+$lang['header']['quarantine'] = "Kwarantanna";
 $lang['mailbox']['domain'] = 'Domena';
 $lang['mailbox']['spam_aliases'] = 'Alias tymczasowy';
 $lang['mailbox']['multiple_bookings'] = 'Wielokrotne rejestracje';
@@ -210,6 +228,17 @@ $lang['mailbox']['toggle_all'] = 'Włącz wszystkie';
 $lang['mailbox']['quick_actions'] = 'Szybkie działania';
 $lang['mailbox']['activate'] = 'Aktywuj';
 $lang['mailbox']['deactivate'] = 'Wyłącz';
+
+$lang['mailbox']['quarantine_notification'] = 'Powiadomienia o kwarantannie';
+$lang['mailbox']['never'] = 'Nigdy';
+$lang['mailbox']['hourly'] = 'Co godzinę';
+$lang['mailbox']['daily'] = 'Co dzień';
+$lang['mailbox']['weekly'] = 'Co tydzień';
+$lang['user']['quarantine_notification'] = 'Powiadomienia o kwarantannie';
+$lang['user']['never'] = 'Nigdy';
+$lang['user']['hourly'] = 'Co godzinę';
+$lang['user']['daily'] = 'Co dzień';
+$lang['user']['weekly'] = 'Co tydzień';
 
 $lang['info']['no_action'] = 'Żadne działanie nie ma zastosowania';
 
@@ -254,6 +283,10 @@ $lang['edit']['dont_check_sender_acl'] = "Wyłącz sprawdzanie nadawcy dla domen
 $lang['edit']['multiple_bookings'] = 'Wielokrotne rejestracje';
 $lang['edit']['kind'] = 'Rodzaj';
 $lang['edit']['resource'] = 'Zasób';
+$lang['edit']['force_pw_update'] = 'Wymuś zmianę hasła przy następnym logowaniu';
+$lang['edit']['force_pw_update_info'] = 'Użytkownik będzie mógł się zalogować tylko do panelu administracyjnego.';
+$lang['edit']['sogo_access'] = 'Zezwól na dostęp do SOGo (webmail)';
+$lang['edit']['sogo_access_info'] = 'To ustawienie nie wpływa na dostęp do innych usług, a także nie zmienia i nie kasuje istniejącego profilu SOGo.';
 
 $lang['add']['syncjob'] = 'Dodaj polecenie synchronizacji';
 $lang['add']['syncjob_hint'] = 'Pamiętaj, że hasła należy zapisywać w zwykłym tekście!';
@@ -372,5 +405,7 @@ $lang['admin']['forwarding_hosts_add_hint'] = 'Możesz albo wyszczególnić adre
 $lang['admin']['host'] = 'Host';
 $lang['admin']['source'] = 'źródło';
 $lang['admin']['add_forwarding_host'] = 'Dodaj hosta przekazującego';
+$lang['admin']['quarantine'] = "Kwarantanna";
+$lang['quarantine']['quarantine'] = "Kwarantanna";
 $lang['success']['forwarding_host_removed'] = "Usunięto hosta przekazującego %s";
 $lang['success']['forwarding_host_added'] = "Dodano hosta przekazującego %s";
